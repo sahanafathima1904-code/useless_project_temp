@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Chaos Locker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔒 Keyboard Chaos Locker 🔀</h1>
+
+    <p class="subtitle">
+        A completely unnecessary keyboard security system
+    </p>
+
+    <div class="status-box" id="status">
+        Keyboard Status:
+        <span class="unlocked">🟢 NORMAL</span>
+    </div>
+
+    <div class="info">
+        <p>Chaos Level: <strong id="chaosLevel">0%</strong></p>
+        <p>Security Threat: <strong id="threat">LOW</strong></p>
+    </div>
+
+    <div id="keyboard" class="keyboard"></div>
+
+    <div class="buttons">
+        <button class="lock-btn" onclick="lockKeyboard()">
+            🔒 Lock Keyboard
+        </button>
+
+        <button class="unlock-btn" onclick="unlockKeyboard()">
+            🔓 Unlock Keyboard
+        </button>
+    </div>
+
+    <div class="message" id="message">
+        Your keyboard is behaving normally.
+    </div>
+</div>
+
+<!-- SECURITY MODAL -->
+<div id="securityModal" class="modal hidden">
+    <div class="modal-box">
+
+        <h2>🔐 Security Verification</h2>
+
+        <p id="questionNumber">Question 1 of 3</p>
+
+        <h3 id="securityQuestion">
+            Security question appears here
+        </h3>
+
+        <!-- FUNNY GIF -->
+        <img
+            id="funnyGif"
+            src="https://media1.tenor.com/m/jSRSifjWQGQAAAAC/ayye-ayye-ayye-aye-auto.gif"
+            alt="Funny reaction GIF"
+            class="funny-gif"
+        >
+
+        <!-- AUDIO FILE -->
+        <audio id="funnyAudio" src="reaction.mp3"></audio>
+
+        <input
+            type="text"
+            id="securityAnswer"
+            placeholder="Type your answer..."
+            autocomplete="off"
+        >
+
+        <button class="submit-btn" onclick="submitAnswer()">
+            Submit Answer
+        </button>
+
+        <p class="warning">
+            ⚠️ Keyboard interference active!
+        </p>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
