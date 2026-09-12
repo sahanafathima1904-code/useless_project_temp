@@ -76,11 +76,11 @@ flowchart LR
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+
+[demo video](https://drive.google.com/file/d/1JQXQ4rok8MQsXAGOsMbLucuz4AwzYKWb/view?usp=sharing)
 
 # Additional Demos
-[Add any extra demo materials/links]
+[live link](https://sahanafathima1904-code.github.io/useless_project_temp/)
 
 ## Team Contributions
 - Sahana Fathima P.A.: Built the project structure, UI, documentation, and git setup,Contributed to the key UI and keyboard behavior style,Contributed to the project assets and UI polishing.
